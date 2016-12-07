@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow,noarchive">
+    <meta name="googlebot" content="noindex,nofollow,noarchive">
+    
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>SEまとめ - 集計</title>
+
+    <!-- Bootstrap -->
+    <link href="./css/bootstrap.min.css" type="text/css" rel="stylesheet">
+
+    <link href="./css/my.css" type="text/css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="./js/html5shiv_3_7_2.min.js"></script>
+      <script src="./js/respond_1_4_2.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./js/jquery_2_3_3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./js/bootstrap.min.js"></script>
+
+    <script src="./js/smoothscroll_2.js"></script>
+    <script src="./js/my.js"></script>
+  </head>
+  <body>
+    
+    <header>
+      <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <a href="./index.html" class="navbar-brand">SEまとめ</a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="navbar-collapse collapse" id="navbar-main">
+            <ul class="nav navbar-nav">
+              <li><a href="./index.html">Top</a></li>
+              <li><a href="./information.html">説明</a></li>
+              <li class="dropdown">
+				<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">一覧 <span class="caret"></span></a>
+				<ul class="dropdown-menu" role="menu">
+				  <li><a href="./list.html?initial=a">あ行</a></li>
+				  <li><a href="./list.html?initial=k">か行</a></li>
+				  <li><a href="./list.html?initial=s">さ行</a></li>
+				  <li><a href="./list.html?initial=t">た行</a></li>
+				  <li><a href="./list.html?initial=n">な行</a></li>
+				  <li><a href="./list.html?initial=h">は行</a></li>
+				  <li><a href="./list.html?initial=m">ま行</a></li>
+				  <li><a href="./list.html?initial=y">や行</a></li>
+				  <li><a href="./list.html?initial=r">ら行</a></li>
+				  <li><a href="./list.html?initial=w">わ行</a></li>
+				  <li><a href="./list.html">全部</a></li>
+				  <li><a href="https://docs.google.com/spreadsheets/d/1obHJYAG3IjYeFuN5JlNM7evC1LHuvymTQ8hskATNQE8/edit#gid=1"target="_blank">旧まとめ</a></li>
+				</ul>
+			  </li>
+              <li><a href="./random-pick-up.html">ランダムピックアップ</a></li>
+              <li><a href="./search.html">検索</a></li>
+              <li><a href="./favorite.html">お気に入り</a></li>
+              <li class="dropdown active">
+				<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">他 <span class="caret"></span></a>
+				<ul class="dropdown-menu" role="menu">
+                  <li><a href="./release.html">更新履歴</a></li>
+                  <li><a href="./modify-plan.html">修正予定</a></li>
+                  <li><a href="./aggregate.html">集計</a></li>
+				</ul>
+			  </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    
+    <div class="container">
+    
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="page-header">
+            <h1 id="type">集計</h1>
+          </div>
+        </div>
+      </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 id="nav-tabs">特に意味のない集計だよ</h2>
+        <div class="bs-component">
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#initial" data-toggle="tab">頭文字集計</a></li>
+            <li><a href="#len" data-toggle="tab">文字数集計</a></li>
+          </ul>
+          <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade active in" id="initial">
+            <div class="col-lg-12">
+              <div class="alert alert-dismissible alert-info">「お」「こ」から始まるSEが多く、「る」「ぬ」から始まるSEが少ない。</div>
+            </div>
+            <div class="col-lg-6">
+              <table class="table table-striped table-hover">
+                <thead>
+                  <tr>
+                    <th>頭文字</th>
+                    <th>数</th>
+                    <th>割合</th>
+                    <th>ランク</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>あ</th>
+                    <td class="text-danger">768</td>
+                    <td class="text-danger">5.71%</td>
+                    <td class="text-danger">5</td>
+                  </tr>
+                  <tr>
+                    <th>い</th>
+                    <td class="text-danger">689</td>
+                    <td class="text-danger">5.12%</td>
+                    <td class="text-danger">5</td>
+                  </tr>
+                  <tr>
+                    <th>う・ヴ</th>
+                    <td>217</td>
+                    <td>1.61%</td>
+                    <td>25</td>
+                  </tr>
+                  <tr>
+                    <th>え</th>
+                    <td>88</td>
+                    <td>0.65%</td>
+                    <td>33</td>
+                  </tr>
+                  <tr>
+                    <th>お</th>
+                    <td class="text-danger bg-rank-top">1080</td>
+                    <td class="text-danger bg-rank-top">8.03%</td>
+                    <td class="text-danger bg-rank-top">1</td>
+                  </tr>
+                  <tr>
+                    <th>か・が</th>
+                    <td>520</td>
+                    <td>3.86%</td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <th>き・ぎ</th>
+                    <td>486</td>
+                    <td>3.61%</td>
+                    <td>11</td>
+                  </tr>
+                  <tr>
+                    <th>く・ぐ</th>
+                    <td>185</td>
+                    <td>1.37%</td>
+                    <td>28</td>
+                  </tr>
+                  <tr>
+                    <th>け・げ</th>
+                    <td>157</td>
+                    <td>1.17%</td>
+                    <td>30</td>
+                  </tr>
+                  <tr>
+                    <th>こ・ご</th>
+                    <td class="text-danger bg-rank-top">1059</td>
+                    <td class="text-danger bg-rank-top">7.87%</td>
+                    <td class="text-danger bg-rank-top">2</td>
+                  </tr>
+                  <tr>
+                    <th>さ・ざ</th>
+                    <td>351</td>
+                    <td>2.61%</td>
+                    <td>14</td>
+                  </tr>
+                  <tr>
+                    <th>し・じ</th>
+                    <td>677</td>
+                    <td>5.03%</td>
+                    <td>6</td>
+                  </tr>
+                  <tr>
+                    <th>す・ず</th>
+                    <td>314</td>
+                    <td>2.33%</td>
+                    <td>17</td>
+                  </tr>
+                  <tr>
+                    <th>せ・ぜ</th>
+                    <td>288</td>
+                    <td>2.14%</td>
+                    <td>18</td>
+                  </tr>
+                  <tr>
+                    <th>そ・ぞ</th>
+                    <td class="text-danger">750</td>
+                    <td class="text-danger">5.57%</td>
+                    <td class="text-danger">4</td>
+                  </tr>
+                  <tr>
+                    <th>た・だ</th>
+                    <td>506</td>
+                    <td>3.76%</td>
+                    <td>9</td>
+                  </tr>
+                  <tr>
+                    <th>ち・ぢ</th>
+                    <td>260</td>
+                    <td>1.93%</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <th>つ・づ</th>
+                    <td>165</td>
+                    <td>1.23%</td>
+                    <td>29</td>
+                  </tr>
+                  <tr>
+                    <th>て・で</th>
+                    <td>258</td>
+                    <td>1.92%</td>
+                    <td>22</td>
+                  </tr>
+                  <tr>
+                    <th>と・ど</th>
+                    <td>503</td>
+                    <td>3.74%</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <th>な</th>
+                    <td>598</td>
+                    <td>4.44%</td>
+                    <td>7</td>
+                  </tr>
+                  <tr>
+                    <th>に</th>
+                    <td>121</td>
+                    <td>0.90%</td>
+                    <td>31</td>
+                  </tr>
+                  <tr>
+                    <th>ぬ</th>
+                    <td class="text-info bg-rank-bottom">7</td>
+                    <td class="text-info bg-rank-bottom">0.05%</td>
+                    <td class="text-info bg-rank-bottom">44</td>
+                  </tr>
+                  <tr>
+                    <th>ね</th>
+                    <td>32</td>
+                    <td>0.24%</td>
+                    <td>40</td>
+                  </tr>
+                  <tr>
+                    <th>の</th>
+                    <td class="text-info">21</td>
+                    <td class="text-info">0.16%</td>
+                    <td class="text-info">41</td>
+                  </tr>
+                  <tr>
+                    <th>は・ば・ぱ</th>
+                    <td>326</td>
+                    <td>2.42%</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <th>ひ・び・ぴ</th>
+                    <td>203</td>
+                    <td>1.51%</td>
+                    <td>26</td>
+                  </tr>
+                  <tr>
+                    <th>ふ・ぶ・ぷ</th>
+                    <td>221</td>
+                    <td>1.64%</td>
+                    <td>24</td>
+                  </tr>
+                  <tr>
+                    <th>へ・べ・ぺ</th>
+                    <td>77</td>
+                    <td>0.57%</td>
+                    <td>34</td>
+                  </tr>
+                  <tr>
+                    <th>ほ・ぼ・ぽ</th>
+                    <td>315</td>
+                    <td>2.34%</td>
+                    <td>16</td>
+                  </tr>
+                  <tr>
+                    <th>ま</th>
+                    <td>410</td>
+                    <td>3.05%</td>
+                    <td>13</td>
+                  </tr>
+                  <tr>
+                    <th>み</th>
+                    <td>186</td>
+                    <td>1.38%</td>
+                    <td>27</td>
+                  </tr>
+                  <tr>
+                    <th>む</th>
+                    <td>109</td>
+                    <td>0.81%</td>
+                    <td>32</td>
+                  </tr>
+                  <tr>
+                    <th>め</th>
+                    <td>61</td>
+                    <td>0.45%</td>
+                    <td>36</td>
+                  </tr>
+                  <tr>
+                    <th>も</th>
+                    <td>286</td>
+                    <td>2.13%</td>
+                    <td>19</td>
+                  </tr>
+                  <tr>
+                    <th>や</th>
+                    <td>260</td>
+                    <td>1.93%</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <th>ゆ</th>
+                    <td>55</td>
+                    <td>0.41%</td>
+                    <td>37</td>
+                  </tr>
+                  <tr>
+                    <th>よ</th>
+                    <td>227</td>
+                    <td>1.69%</td>
+                    <td>23</td>
+                  </tr>
+                  <tr>
+                    <th>ら</th>
+                    <td>47</td>
+                    <td>0.35%</td>
+                    <td>38</td>
+                  </tr>
+                  <tr>
+                    <th>り</th>
+                    <td>71</td>
+                    <td>0.53%</td>
+                    <td>35</td>
+                  </tr>
+                  <tr>
+                    <th>る</th>
+                    <td class="text-info bg-rank-bottom">1</td>
+                    <td class="text-info bg-rank-bottom">0.01%</td>
+                    <td class="text-info bg-rank-bottom">45</td>
+                  </tr>
+                  <tr>
+                    <th>れ</th>
+                    <td>43</td>
+                    <td>0.32%</td>
+                    <td>39</td>
+                  </tr>
+                  <tr>
+                    <th>ろ</th>
+                    <td class="text-info">17</td>
+                    <td class="text-info">0.13%</td>
+                    <td class="text-info">42</td>
+                  </tr>
+                  <tr>
+                    <th>わ</th>
+                    <td>430</td>
+                    <td>3.20%</td>
+                    <td>12</td>
+                  </tr>
+                  <tr>
+                    <th>ん</th>
+                    <td class="text-info">10</td>
+                    <td class="text-info">0.07%</td>
+                    <td class="text-info">43</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th>合計</th>
+                    <th>13455</th>
+                    <th>100.00%</td>
+                    <th></th>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+            
+            <div class="col-lg-6">
+              <table class="table table-striped table-hover">
+                <thead>
+                  <tr>
+                    <th>頭文字</th>
+                    <th>数</th>
+                    <th>割合</th>
+                    <th>ランク</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>あ行</th>
+                    <td class="text-danger bg-rank-top">2842</td>
+                    <td class="text-danger bg-rank-top">21.12%</td>
+                    <td class="text-danger bg-rank-top">1</td>
+                  </tr>
+                  <tr>
+                    <th>か行</th>
+                    <td class="text-danger">2407</td>
+                    <td class="text-danger">17.89%</td>
+                    <td class="text-danger">2</td>
+                  </tr>
+                  <tr>
+                    <th>さ行</th>
+                    <td class="text-danger">2380</td>
+                    <td class="text-danger">17.69%</td>
+                    <td class="text-danger">3</td>
+                  </tr>
+                  <tr>
+                    <th>た行</th>
+                    <td>1692</td>
+                    <td>12.58%</td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <th>な行</th>
+                    <td>779</td>
+                    <td>5.79%</td>
+                    <td>7</td>
+                  </tr>
+                  <tr>
+                    <th>は行</th>
+                    <td>1142</td>
+                    <td>8.49%</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <th>ま行</th>
+                    <td>1052</td>
+                    <td>7.82%</td>
+                    <td>6</td>
+                  </tr>
+                  <tr>
+                    <th>や行</th>
+                    <td class="text-info">542</td>
+                    <td class="text-info">4.03%</td>
+                    <td class="text-info">8</td>
+                  </tr>
+                  <tr>
+                    <th>ら行</th>
+                    <td class="text-info bg-rank-bottom">179</td>
+                    <td class="text-info bg-rank-bottom">1.33%</td>
+                    <td class="text-info bg-rank-bottom">10</td>
+                  </tr>
+                  <tr>
+                    <th>わ行</th>
+                    <td class="text-info">440</td>
+                    <td class="text-info">3.27%</td>
+                    <td class="text-info">9</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th>合計</th>
+                    <th>13455</th>
+                    <th>100.00%</td>
+                    <th></th>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+            </div>
+            
+            <div class="tab-pane fade" id="len">
+            <div class="col-lg-12">
+              <div class="alert alert-dismissible alert-info">5～9文字のSEが多い。24・28文字がちょっと頑張ってる感がある。<br>※反応するワードの文字数であって鳴るSEの内容の音数ではない。特に意味のない集計である。<br>例：俺、私（1文字計算）アタシ（3文字計算）</div>
+            </div>
+            <div class="col-lg-6">
+              <table class="table table-striped table-hover">
+                <thead>
+                  <tr>
+                    <th>文字数</th>
+                    <th>数</th>
+                    <th>割合</th>
+                    <th>ランク</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>2文字</th>
+                    <td>61</td>
+                    <td>0.45%</td>
+                    <td>19</td>
+                  </tr>
+                  <tr>
+                    <th>3文字</th>
+                    <td>330</td>
+                    <td>2.45%</td>
+                    <td>13</td>
+                  </tr>
+                  <tr>
+                    <th>4文字</th>
+                    <td>959</td>
+                    <td>7.13%</td>
+                    <td>7</td>
+                  </tr>
+                  <tr>
+                    <th>5文字</th>
+                    <td class="text-danger">1280</td>
+                    <td class="text-danger">9.51%</td>
+                    <td class="text-danger">5</td>
+                  </tr>
+                  <tr>
+                    <th>6文字</th>
+                    <td class="text-danger bg-rank-top">1544</td>
+                    <td class="text-danger bg-rank-top">11.48%</td>
+                    <td class="text-danger bg-rank-top">1</td>
+                  </tr>
+                  <tr>
+                    <th>7文字</th>
+                    <td class="text-danger">1496</td>
+                    <td class="text-danger">11.12%</td>
+                    <td class="text-danger">2</td>
+                  </tr>
+                  <tr>
+                    <th>8文字</th>
+                    <td class="text-danger">1424</td>
+                    <td class="text-danger">10.58%</td>
+                    <td class="text-danger">3</td>
+                  </tr>
+                  <tr>
+                    <th>9文字</th>
+                    <td class="text-danger">1311</td>
+                    <td class="text-danger">9.74%</td>
+                    <td class="text-danger">4</td>
+                  </tr>
+                  <tr>
+                    <th>10文字</th>
+                    <td>1037</td>
+                    <td>7.71%</td>
+                    <td>6</td>
+                  </tr>
+                  <tr>
+                    <th>11文字</th>
+                    <td>914</td>
+                    <td>6.79%</td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <th>12文字</th>
+                    <td>732</td>
+                    <td>5.44%</td>
+                    <td>9</td>
+                  </tr>
+                  <tr>
+                    <th>13文字</th>
+                    <td>558</td>
+                    <td>4.15%</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <th>14文字</th>
+                    <td>451</td>
+                    <td>3.35%</td>
+                    <td>11</td>
+                  </tr>
+                  <tr>
+                    <th>15文字</th>
+                    <td>354</td>
+                    <td>2.63%</td>
+                    <td>12</td>
+                  </tr>
+                  <tr>
+                    <th>16文字</th>
+                    <td>266</td>
+                    <td>1.98%</td>
+                    <td>14</td>
+                  </tr>
+                  <tr>
+                    <th>17文字</th>
+                    <td>192</td>
+                    <td>1.43%</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <th>18文字</th>
+                    <td>158</td>
+                    <td>1.17%</td>
+                    <td>16</td>
+                  </tr>
+                  <tr>
+                    <th>19文字</th>
+                    <td>130</td>
+                    <td>0.97%</td>
+                    <td>17</td>
+                  </tr>
+                  <tr>
+                    <th>20文字</th>
+                    <td>77</td>
+                    <td>0.57%</td>
+                    <td>18</td>
+                  </tr>
+                  <tr>
+                    <th>21文字</th>
+                    <td>56</td>
+                    <td>0.42%</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <th>22文字</th>
+                    <td>34</td>
+                    <td>0.25%</td>
+                    <td>21</td>
+                  </tr>
+                  <tr>
+                    <th>23文字</th>
+                    <td>17</td>
+                    <td>0.13%</td>
+                    <td>23</td>
+                  </tr>
+                  <tr>
+                    <th>24文字</th>
+                    <td class="text-warning">28</td>
+                    <td class="text-warning">0.21%</td>
+                    <td>22</td>
+                  </tr>
+                  <tr>
+                    <th>25文字</th>
+                    <td>8</td>
+                    <td>0.06%</td>
+                    <td>25</td>
+                  </tr>
+                  <tr>
+                    <th>26文字</th>
+                    <td>5</td>
+                    <td>0.04%</td>
+                    <td>27</td>
+                  </tr>
+                  <tr>
+                    <th>27文字</th>
+                    <td>6</td>
+                    <td>0.04%</td>
+                    <td>26</td>
+                  </tr>
+                  <tr>
+                    <th>28文字</th>
+                    <td class="text-warning">10</td>
+                    <td class="text-warning">0.07%</td>
+                    <td>24</td>
+                  </tr>
+                  <tr>
+                    <th>29文字</th>
+                    <td>3</td>
+                    <td>0.02%</td>
+                    <td>28</td>
+                  </tr>
+                  <tr>
+                    <th>30文字</th>
+                    <td>2</td>
+                    <td>0.01%</td>
+                    <td>29</td>
+                  </tr>
+                  <tr>
+                    <th>31文字</th>
+                    <td>1</td>
+                    <td>0.01%</td>
+                    <td>32</td>
+                  </tr>
+                  <tr>
+                    <th>32文字</th>
+                    <td>1</td>
+                    <td>0.01%</td>
+                    <td>32</td>
+                  </tr>
+                  <tr>
+                    <th>33文字</th>
+                    <td>1</td>
+                    <td>0.01%</td>
+                    <td>32</td>
+                  </tr>
+                  <tr>
+                    <th>34文字</th>
+                    <td>1</td>
+                    <td>0.01%</td>
+                    <td>32</td>
+                  </tr>
+                  <tr>
+                    <th>35文字</th>
+                    <td>2</td>
+                    <td>0.01%</td>
+                    <td>29</td>
+                  </tr>
+                  <tr>
+                    <th>36文字</th>
+                    <td>2</td>
+                    <td>0.01%</td>
+                    <td>29</td>
+                  </tr>
+                  <tr>
+                    <th>37文字</th>
+                    <td>1</td>
+                    <td>0.01%</td>
+                    <td>32</td>
+                  </tr>
+                  <tr>
+                    <th>38文字</th>
+                    <td>1</td>
+                    <td>0.01%</td>
+                    <td>32</td>
+                  </tr>
+                  <tr>
+                    <th>39文字</th>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td class="text-muted">40</td>
+                  </tr>
+                  <tr>
+                    <th>40文字</th>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td class="text-muted">40</td>
+                  </tr>
+                  <tr>
+                    <th>41文字</th>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td class="text-muted">40</td>
+                  </tr>
+                  <tr>
+                    <th>42文字</th>
+                    <td>1</td>
+                    <td>0.01%</td>
+                    <td>32</td>
+                  </tr>
+                  <tr>
+                    <th>43文字</th>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td class="text-muted">40</td>
+                  </tr>
+                  <tr>
+                    <th>44文字</th>
+                    <td class="text-success">1</td>
+                    <td>0.01%</td>
+                    <td>32</td>
+                  </tr>
+                  <tr>
+                    <th>45文字</th>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td class="text-muted">40</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th>合計</th>
+                    <th>13455</th>
+                    <th>100.00%</td>
+                    <th></th>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+            
+            <div class="col-lg-6">
+              <table class="table table-striped table-hover">
+                <thead>
+                  <tr>
+                    <th>文字数</th>
+                    <th>数</th>
+                    <th>割合</th>
+                    <th>ランク</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>2～5文字</th>
+                    <td class="text-danger">2630</td>
+                    <td class="text-danger">19.55%</td>
+                    <td class="text-danger">3</td>
+                  </tr>
+                  <tr>
+                    <th>6～10文字</th>
+                    <td class="text-danger bg-rank-top">6812</td>
+                    <td class="text-danger bg-rank-top">50.63%</td>
+                    <td class="text-danger bg-rank-top">1</td>
+                  </tr>
+                  <tr>
+                    <th>11～15文字</th>
+                    <td class="text-danger">3009</td>
+                    <td class="text-danger">22.36%</td>
+                    <td class="text-danger">2</td>
+                  </tr>
+                  <tr>
+                    <th>16～20文字</th>
+                    <td>823</td>
+                    <td>6.12%</td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <th>21～25文字</th>
+                    <td>143</td>
+                    <td>1.06%</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <th>26～30文字</th>
+                    <td>26</td>
+                    <td>0.19%</td>
+                    <td>6</td>
+                  </tr>
+                  <tr>
+                    <th>31～35文字</th>
+                    <td>6</td>
+                    <td>0.04%</td>
+                    <td>7</td>
+                  </tr>
+                  <tr>
+                    <th>36～40文字</th>
+                    <td class="text-info">4</td>
+                    <td class="text-info">0.03%</td>
+                    <td class="text-info">8</td>
+                  </tr>
+                  <tr>
+                    <th>41文字以上</th>
+                    <td class="text-info bg-rank-bottom">2</td>
+                    <td class="text-info bg-rank-bottom">0.01%</td>
+                    <td class="text-info bg-rank-bottom">9</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th>合計</th>
+                    <th>13455</th>
+                    <th>100.00%</td>
+                    <th></th>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <hr>
+    
+      <div class="row">
+        <div class="col-lg-12 text-right">
+          <a href="#" id="scroll">最上部に戻る</a>
+        </div>
+      </div>
+    
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow,noarchive">
+    <meta name="googlebot" content="noindex,nofollow,noarchive">
+    
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>SEまとめ - 一覧</title>
+
+    <!-- Bootstrap -->
+    <link href="./css/datatables.min.css" type="text/css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" type="text/css" rel="stylesheet">
+
+    <link href="./css/my.css" type="text/css" rel="stylesheet">
+ 
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="./js/html5shiv_3_7_2.min.js"></script>
+      <script src="./js/respond_1_4_2.min.js"></script>
+    <![endif]-->
+    <script>
+      /*@cc_on 
+        var doc = document;
+        eval('var document = doc');
+      @*/
+    </script>
+
+    <script src="./js/jquery_2_3_3.min.js"></script>
+    <script src="./js/ie_ajax_xhr_access_local_file_test.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+    <script src="./js/smoothscroll.js"></script>
+    <script src="./js/audio_control.js"></script>
+    <script src="./js/clipboard_1_5_3.js"></script>
+    
+    <script src="./js/encoding.min.js"></script>
+    <script src="./js/se_data_reader.js"></script>
+    <script src="./js/datatables.min.js"></script>
+
+    <script src="./js/list.js"></script>
+  </head>
+  <body>
+    
+    <header>
+      <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <a href="./index.html" class="navbar-brand">SEまとめ</a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="navbar-collapse collapse" id="navbar-main">
+            <ul class="nav navbar-nav">
+              <li><a href="./index.html">Top</a></li>
+              <li><a href="./information.html">説明</a></li>
+              <li class="dropdown active">
+				<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">一覧 <span class="caret"></span></a>
+				<ul class="dropdown-menu" role="menu">
+				  <li><a href="./list.html?initial=a">あ行</a></li>
+				  <li><a href="./list.html?initial=k">か行</a></li>
+				  <li><a href="./list.html?initial=s">さ行</a></li>
+				  <li><a href="./list.html?initial=t">た行</a></li>
+				  <li><a href="./list.html?initial=n">な行</a></li>
+				  <li><a href="./list.html?initial=h">は行</a></li>
+				  <li><a href="./list.html?initial=m">ま行</a></li>
+				  <li><a href="./list.html?initial=y">や行</a></li>
+				  <li><a href="./list.html?initial=r">ら行</a></li>
+				  <li><a href="./list.html?initial=w">わ行</a></li>
+				  <li><a href="./list.html">全部</a></li>
+				  <li><a href="https://docs.google.com/spreadsheets/d/1obHJYAG3IjYeFuN5JlNM7evC1LHuvymTQ8hskATNQE8/edit#gid=1"target="_blank">旧まとめ</a></li>
+				</ul>
+			  </li>
+              <li class="dropdown"><a href="./random-pick-up.html">ランダムピックアップ</a></li>
+              <li class="dropdown"><a href="./search.html">検索</a></li>
+              <li><a href="./favorite.html">お気に入り</a></li>
+              <li><a href="./release.html">更新履歴</a></li>
+              <li><a href="./modify-plan.html">修正予定</a></li>
+              <li><a href="./aggregate.html">集計</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    
+    <div class="container">
+    
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="page-header">
+            <h1 id="type">一覧</h1>
+          </div>
+        </div>
+      </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="alert alert-dismissible alert-info">
+          <span style="margin-right:1.5em;">全部の時のみページングが有効。IEだと表示に使ってるDataTablesのレンダリングが超絶重いので注意。旧版へのリンクも付けた。</span>
+          <ul class="pager" style="text-align:left;">
+            <li><a href="./list.html?initial=a">あ行</a></li>
+            <li><a href="./list.html?initial=k">か行</a></li>
+            <li><a href="./list.html?initial=s">さ行</a></li>
+            <li><a href="./list.html?initial=t">た行</a></li>
+            <li><a href="./list.html?initial=n">な行</a></li>
+            <li><a href="./list.html?initial=h">は行</a></li>
+            <li><a href="./list.html?initial=m">ま行</a></li>
+            <li><a href="./list.html?initial=y">や行</a></li>
+            <li><a href="./list.html?initial=r">ら行</a></li>
+            <li><a href="./list.html?initial=w">わ行</a></li>
+            <li><a href="./list.html">全部</a></li>
+            <li><a href="https://docs.google.com/spreadsheets/d/1obHJYAG3IjYeFuN5JlNM7evC1LHuvymTQ8hskATNQE8/edit#gid=1"target="_blank" style="background-color:#ffffbb;">旧まとめ(新規タブ)</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="bs-component">
+          <table class="table table-striped table-hover" id="foo-table">
+            <thead>
+              <tr class="something">
+                <th class="col-md-1">行番号(ID)</th>
+                <th class="col-md-1">頭文字</th>
+                <th class="col-md-5">反応するワード</th>
+                <th class="col-md-1">文字数</th>
+                <th class="col-md-1">コピー</th>
+                <th class="col-md-1">視聴</th>
+                <th class="col-md-2">お気に入り</th>
+              </tr>
+            </thead>
+            <tbody id="se_data">
+            </tbody>
+          </table>
+          <div id="columns"></div>
+        </div><!-- /example -->
+      </div>
+    </div>
+    
+      <hr>
+    
+      <div class="row">
+        <div class="col-lg-12 text-right">
+          <a href="#" id="scroll">最上部に戻る</a>
+        </div>
+      </div>
+
+    
+    </div>
+    
+  </body>
+</html>

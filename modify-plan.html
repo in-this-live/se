@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow,noarchive">
+    <meta name="googlebot" content="noindex,nofollow,noarchive">
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>SEまとめ - 修正予定</title>
+
+    <!-- Bootstrap -->
+    <link href="./css/bootstrap.min.css" type="text/css" rel="stylesheet">
+
+    <link href="./css/my.css" type="text/css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="./js/html5shiv_3_7_2.min.js"></script>
+      <script src="./js/respond_1_4_2.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./js/jquery_2_3_3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./js/bootstrap.min.js"></script>
+
+    <script src="./js/smoothscroll.js"></script>
+  </head>
+  <body>
+    
+    <header>
+      <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <a href="./index.html" class="navbar-brand">SEまとめ</a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="navbar-collapse collapse" id="navbar-main">
+            <ul class="nav navbar-nav">
+              <li><a href="./index.html">Top</a></li>
+              <li><a href="./information.html">説明</a></li>
+              <li class="dropdown">
+				<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">一覧 <span class="caret"></span></a>
+				<ul class="dropdown-menu" role="menu">
+				  <li><a href="./list.html?initial=a">あ行</a></li>
+				  <li><a href="./list.html?initial=k">か行</a></li>
+				  <li><a href="./list.html?initial=s">さ行</a></li>
+				  <li><a href="./list.html?initial=t">た行</a></li>
+				  <li><a href="./list.html?initial=n">な行</a></li>
+				  <li><a href="./list.html?initial=h">は行</a></li>
+				  <li><a href="./list.html?initial=m">ま行</a></li>
+				  <li><a href="./list.html?initial=y">や行</a></li>
+				  <li><a href="./list.html?initial=r">ら行</a></li>
+				  <li><a href="./list.html?initial=w">わ行</a></li>
+				  <li><a href="./list.html">全部</a></li>
+				  <li><a href="https://docs.google.com/spreadsheets/d/1obHJYAG3IjYeFuN5JlNM7evC1LHuvymTQ8hskATNQE8/edit#gid=1"target="_blank">旧まとめ</a></li>
+				</ul>
+			  </li>
+              <li><a href="./random-pick-up.html">ランダムピックアップ</a></li>
+              <li><a href="./search.html">検索</a></li>
+              <li><a href="./favorite.html">お気に入り</a></li>
+              <li class="dropdown active">
+				<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">他 <span class="caret"></span></a>
+				<ul class="dropdown-menu" role="menu">
+                  <li><a href="./release.html">更新履歴</a></li>
+                  <li><a href="./modify-plan.html">修正予定</a></li>
+                  <li><a href="./aggregate.html">集計</a></li>
+				</ul>
+			  </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="page-header">
+            <h1 id="type">修正予定</h1>
+          </div>
+        </div>
+      </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="bs-component">
+
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">まあ冗談はさておき</h3>
+            </div>
+            <div class="panel-body">
+              <p>「まあ」が鳴ってないので「冗談はさておき.mp3」にリネームし、棒読みちゃんのReplaceTag.dicも修正する。<br>
+              いつかやる。</p>
+            </div>
+          </div>
+          
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">バ/カなふりをして本当に心底バカなのか</h3>
+            </div>
+            <div class="panel-body">
+              <p>2つ目のバカをReplaceTagでバ/カにしてない置換漏れ。現状ではNGワードに引っかかるため使えない。</p>
+               <div class="panel panel-info" id="first">
+                 <div class="panel-heading">
+                   <h4 class="panel-title">修正方法</h4>
+                 </div>
+                 <div class="panel-body">
+                   <ol>
+                     <li>棒読みちゃんを起動する</li>
+                     <li>「辞書登録」タブを開く</li>
+                     <li>「タグ」タブを開く</li>
+                     <li>下部の「フィルタ」に『本当に心底バカなのか』で抽出ボタンを押す</li>
+                     <li>該当するSEのデータが出てくるので、クリックする</li>
+                     <li>探索文字列部分を「バ/カなふりをして本当に心底バカなのか」→「バ/カなふりをして本当に心底バ/カなのか」にして置き換えボタンを押す</li>
+                     <li>修正完了。「バ/カなふりをして本当に心底バ/カなのか」でNGを回避し、SEが鳴るようになる。</li>
+                   </ol>
+                   <p class="text-info">いつ修正するか未定なので、自分で直す場合は上記手順で対応してください。</p>
+                 </div>
+               </div>
+          
+            </div>
+          </div>
+
+      <hr style="border: 0; height: 1px; background: #333; background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);  background-image: -moz-linear-gradient(left, #ccc, #333, #ccc); background-image: -ms-linear-gradient(left, #ccc, #333, #ccc); background-image: -o-linear-gradient(left, #ccc, #333, #ccc);">
+      
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="page-header">
+            <h1 id="type">新規収録予定</h1>
+          </div>
+        </div>
+      </div>
+
+
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="bs-component">
+
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h3 class="panel-title">PS3</h3>
+            </div>
+            <div class="panel-body">
+              <ul class="list-group">
+                <li class="list-group-item text-muted"><s>GILTY GEAR Xrd -REVELATOR-</s> <small>※売ってもうた</small></li>
+                <li class="list-group-item text-muted">BLAZBLUE CENTRALFICTION</li>
+                <li class="list-group-item text-muted">龍が如く0</li>
+                <li class="list-group-item text-muted">龍が如く極</li>
+              </ul>
+              <p>今のところやる気なし。これ以上増やしても、使いこなせる人が中々居ない現状なので。</p>
+            </div>
+          </div>
+        
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h3 class="panel-title">3DS</h3>
+            </div>
+            <div class="panel-body">
+              <ul class="list-group">
+                <li class="list-group-item text-muted">セブンスドラゴンIII ode:VFD</li>
+              </ul>
+              <p>汎用的に使える音声が多くあるので、増やしたいと思った事はあるが…<br>
+              見積もってみたら、多分6000個くらい増やせそう→(ヽ'ω`)しんどい　となったので、頑張る気力は当分ない。</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+      <hr>
+    
+      <div class="row">
+        <div class="col-lg-12 text-right">
+          <a href="#" id="scroll">最上部に戻る</a>
+        </div>
+      </div>
+
+    </div>
+    
+  </body>
+</html>
